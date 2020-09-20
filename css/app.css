@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
 
+body {
+    background-color: #f7f7f7;
+}
 #hero {
     width: 100%;
     height: 100vh;
@@ -11,6 +14,9 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 #hero h1 {
     font-family: 'Poppins', sans-serif;
@@ -42,6 +48,14 @@
     top: 5px;
 }
 
+.navbar-dark {
+    background-color: #16112d !important;
+}
+
+.nav-link {
+    font-family: roboto, 'sans-serif';
+}
+
 .section-container {
     margin: 50px 0px; 
 }
@@ -60,6 +74,8 @@
 .about-info > h3 {
     font-family: roboto, sans-serif;
 }
+ 
+
 
 .my-skills {
     padding: 20px; 
@@ -123,12 +139,13 @@
 
 .project-tech-tags {
     display: inline-block;
-    background-color: red;
-    padding: 3px;
+    background-color: #860519;
+    padding: 3px 10px;
     font-size: 10px;
     font-family: roboto, sans-serif;
     margin: 0px 2px;
-}
+    border-radius: 3px;
+} 
 
 .project-link {
     display: inline-block;
@@ -142,13 +159,50 @@
     font-size: 12px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-   
+    border-radius: 10px;
 }
 
 .project-link:hover, 
 .project-link:visited {
     color: white;
     text-decoration: none;
-    background-color: rgb(12, 16, 104);
+    background-color: #000;
+
 }
 
+.project {
+    display: none;
+}
+
+.project.active {
+    display: block;
+}
+
+.project-type{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    
+}
+
+.project-type li a {
+    display: block;
+    padding: 5px 20px;
+    background-color: #ededed;
+    border:1px solid #ccc;
+    margin: 5px;
+    color: #666;
+    text-decoration: none;
+    cursor:pointer;
+    border-radius: 20px;
+    font-family: roboto, 'sans-serif';
+}
+
+.project-type li a.active {
+    color: #fff;
+    background-color: #860519;
+}
